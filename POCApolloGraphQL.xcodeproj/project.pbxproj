@@ -81,6 +81,7 @@
 				41972F902099F7EF002384DB /* POCApolloGraphQLTests */,
 				41972F9B2099F7EF002384DB /* POCApolloGraphQLUITests */,
 				41972F7A2099F7EC002384DB /* Products */,
+				41972FAB209A123F002384DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +126,13 @@
 			path = POCApolloGraphQLUITests;
 			sourceTree = "<group>";
 		};
+		41972FAB209A123F002384DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +143,7 @@
 				41972F752099F7EC002384DB /* Sources */,
 				41972F762099F7EC002384DB /* Frameworks */,
 				41972F772099F7EC002384DB /* Resources */,
+				41972FAA209A0EC1002384DB /* Carthage Run Script */,
 			);
 			buildRules = (
 			);
@@ -250,6 +259,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41972FAA209A0EC1002384DB /* Carthage Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Carthage Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41972F752099F7EC002384DB /* Sources */ = {
@@ -432,6 +458,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RJVEE6YB6F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = POCApolloGraphQL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -450,6 +480,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RJVEE6YB6F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = POCApolloGraphQL/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
