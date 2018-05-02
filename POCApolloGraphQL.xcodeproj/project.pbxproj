@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		41972F7D2099F7EC002384DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41972F7C2099F7EC002384DB /* AppDelegate.swift */; };
+		41972F7F2099F7EC002384DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41972F7E2099F7EC002384DB /* ViewController.swift */; };
+		41972F822099F7EC002384DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41972F802099F7EC002384DB /* Main.storyboard */; };
+		41972F842099F7EF002384DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41972F832099F7EF002384DB /* Assets.xcassets */; };
+		41972F872099F7EF002384DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41972F852099F7EF002384DB /* LaunchScreen.storyboard */; };
+		41972F922099F7EF002384DB /* POCApolloGraphQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41972F912099F7EF002384DB /* POCApolloGraphQLTests.swift */; };
+		41972F9D2099F7EF002384DB /* POCApolloGraphQLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41972F9C2099F7EF002384DB /* POCApolloGraphQLUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41972F8E2099F7EF002384DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41972F712099F7EC002384DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41972F782099F7EC002384DB;
+			remoteInfo = POCApolloGraphQL;
+		};
+		41972F992099F7EF002384DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41972F712099F7EC002384DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41972F782099F7EC002384DB;
+			remoteInfo = POCApolloGraphQL;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		41972F792099F7EC002384DB /* POCApolloGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCApolloGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		41972F7C2099F7EC002384DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41972F7E2099F7EC002384DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		41972F812099F7EC002384DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41972F832099F7EF002384DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41972F862099F7EF002384DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41972F882099F7EF002384DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41972F8D2099F7EF002384DB /* POCApolloGraphQLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCApolloGraphQLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41972F912099F7EF002384DB /* POCApolloGraphQLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCApolloGraphQLTests.swift; sourceTree = "<group>"; };
+		41972F932099F7EF002384DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41972F982099F7EF002384DB /* POCApolloGraphQLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCApolloGraphQLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41972F9C2099F7EF002384DB /* POCApolloGraphQLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCApolloGraphQLUITests.swift; sourceTree = "<group>"; };
+		41972F9E2099F7F0002384DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41972F762099F7EC002384DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41972F8A2099F7EF002384DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41972F952099F7EF002384DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41972F702099F7EC002384DB = {
+			isa = PBXGroup;
+			children = (
+				41972F7B2099F7EC002384DB /* POCApolloGraphQL */,
+				41972F902099F7EF002384DB /* POCApolloGraphQLTests */,
+				41972F9B2099F7EF002384DB /* POCApolloGraphQLUITests */,
+				41972F7A2099F7EC002384DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41972F7A2099F7EC002384DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41972F792099F7EC002384DB /* POCApolloGraphQL.app */,
+				41972F8D2099F7EF002384DB /* POCApolloGraphQLTests.xctest */,
+				41972F982099F7EF002384DB /* POCApolloGraphQLUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41972F7B2099F7EC002384DB /* POCApolloGraphQL */ = {
+			isa = PBXGroup;
+			children = (
+				41972F7C2099F7EC002384DB /* AppDelegate.swift */,
+				41972F7E2099F7EC002384DB /* ViewController.swift */,
+				41972F802099F7EC002384DB /* Main.storyboard */,
+				41972F832099F7EF002384DB /* Assets.xcassets */,
+				41972F852099F7EF002384DB /* LaunchScreen.storyboard */,
+				41972F882099F7EF002384DB /* Info.plist */,
+			);
+			path = POCApolloGraphQL;
+			sourceTree = "<group>";
+		};
+		41972F902099F7EF002384DB /* POCApolloGraphQLTests */ = {
+			isa = PBXGroup;
+			children = (
+				41972F912099F7EF002384DB /* POCApolloGraphQLTests.swift */,
+				41972F932099F7EF002384DB /* Info.plist */,
+			);
+			path = POCApolloGraphQLTests;
+			sourceTree = "<group>";
+		};
+		41972F9B2099F7EF002384DB /* POCApolloGraphQLUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41972F9C2099F7EF002384DB /* POCApolloGraphQLUITests.swift */,
+				41972F9E2099F7F0002384DB /* Info.plist */,
+			);
+			path = POCApolloGraphQLUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41972F782099F7EC002384DB /* POCApolloGraphQL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41972FA12099F7F0002384DB /* Build configuration list for PBXNativeTarget "POCApolloGraphQL" */;
+			buildPhases = (
+				41972F752099F7EC002384DB /* Sources */,
+				41972F762099F7EC002384DB /* Frameworks */,
+				41972F772099F7EC002384DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = POCApolloGraphQL;
+			productName = POCApolloGraphQL;
+			productReference = 41972F792099F7EC002384DB /* POCApolloGraphQL.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41972F8C2099F7EF002384DB /* POCApolloGraphQLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41972FA42099F7F0002384DB /* Build configuration list for PBXNativeTarget "POCApolloGraphQLTests" */;
+			buildPhases = (
+				41972F892099F7EF002384DB /* Sources */,
+				41972F8A2099F7EF002384DB /* Frameworks */,
+				41972F8B2099F7EF002384DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41972F8F2099F7EF002384DB /* PBXTargetDependency */,
+			);
+			name = POCApolloGraphQLTests;
+			productName = POCApolloGraphQLTests;
+			productReference = 41972F8D2099F7EF002384DB /* POCApolloGraphQLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41972F972099F7EF002384DB /* POCApolloGraphQLUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41972FA72099F7F0002384DB /* Build configuration list for PBXNativeTarget "POCApolloGraphQLUITests" */;
+			buildPhases = (
+				41972F942099F7EF002384DB /* Sources */,
+				41972F952099F7EF002384DB /* Frameworks */,
+				41972F962099F7EF002384DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41972F9A2099F7EF002384DB /* PBXTargetDependency */,
+			);
+			name = POCApolloGraphQLUITests;
+			productName = POCApolloGraphQLUITests;
+			productReference = 41972F982099F7EF002384DB /* POCApolloGraphQLUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41972F712099F7EC002384DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Tatiana Magdalena";
+				TargetAttributes = {
+					41972F782099F7EC002384DB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					41972F8C2099F7EF002384DB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 41972F782099F7EC002384DB;
+					};
+					41972F972099F7EF002384DB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 41972F782099F7EC002384DB;
+					};
+				};
+			};
+			buildConfigurationList = 41972F742099F7EC002384DB /* Build configuration list for PBXProject "POCApolloGraphQL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41972F702099F7EC002384DB;
+			productRefGroup = 41972F7A2099F7EC002384DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41972F782099F7EC002384DB /* POCApolloGraphQL */,
+				41972F8C2099F7EF002384DB /* POCApolloGraphQLTests */,
+				41972F972099F7EF002384DB /* POCApolloGraphQLUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41972F772099F7EC002384DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41972F872099F7EF002384DB /* LaunchScreen.storyboard in Resources */,
+				41972F842099F7EF002384DB /* Assets.xcassets in Resources */,
+				41972F822099F7EC002384DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41972F8B2099F7EF002384DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41972F962099F7EF002384DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41972F752099F7EC002384DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41972F7F2099F7EC002384DB /* ViewController.swift in Sources */,
+				41972F7D2099F7EC002384DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41972F892099F7EF002384DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41972F922099F7EF002384DB /* POCApolloGraphQLTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41972F942099F7EF002384DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41972F9D2099F7EF002384DB /* POCApolloGraphQLUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41972F8F2099F7EF002384DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41972F782099F7EC002384DB /* POCApolloGraphQL */;
+			targetProxy = 41972F8E2099F7EF002384DB /* PBXContainerItemProxy */;
+		};
+		41972F9A2099F7EF002384DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41972F782099F7EC002384DB /* POCApolloGraphQL */;
+			targetProxy = 41972F992099F7EF002384DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41972F802099F7EC002384DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41972F812099F7EC002384DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41972F852099F7EF002384DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41972F862099F7EF002384DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41972F9F2099F7F0002384DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41972FA02099F7F0002384DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41972FA22099F7F0002384DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJVEE6YB6F;
+				INFOPLIST_FILE = POCApolloGraphQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tom.POCApolloGraphQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41972FA32099F7F0002384DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJVEE6YB6F;
+				INFOPLIST_FILE = POCApolloGraphQL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tom.POCApolloGraphQL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41972FA52099F7F0002384DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJVEE6YB6F;
+				INFOPLIST_FILE = POCApolloGraphQLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tom.POCApolloGraphQLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POCApolloGraphQL.app/POCApolloGraphQL";
+			};
+			name = Debug;
+		};
+		41972FA62099F7F0002384DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJVEE6YB6F;
+				INFOPLIST_FILE = POCApolloGraphQLTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tom.POCApolloGraphQLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/POCApolloGraphQL.app/POCApolloGraphQL";
+			};
+			name = Release;
+		};
+		41972FA82099F7F0002384DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJVEE6YB6F;
+				INFOPLIST_FILE = POCApolloGraphQLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tom.POCApolloGraphQLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = POCApolloGraphQL;
+			};
+			name = Debug;
+		};
+		41972FA92099F7F0002384DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RJVEE6YB6F;
+				INFOPLIST_FILE = POCApolloGraphQLUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.tom.POCApolloGraphQLUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = POCApolloGraphQL;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41972F742099F7EC002384DB /* Build configuration list for PBXProject "POCApolloGraphQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41972F9F2099F7F0002384DB /* Debug */,
+				41972FA02099F7F0002384DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41972FA12099F7F0002384DB /* Build configuration list for PBXNativeTarget "POCApolloGraphQL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41972FA22099F7F0002384DB /* Debug */,
+				41972FA32099F7F0002384DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41972FA42099F7F0002384DB /* Build configuration list for PBXNativeTarget "POCApolloGraphQLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41972FA52099F7F0002384DB /* Debug */,
+				41972FA62099F7F0002384DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41972FA72099F7F0002384DB /* Build configuration list for PBXNativeTarget "POCApolloGraphQLUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41972FA82099F7F0002384DB /* Debug */,
+				41972FA92099F7F0002384DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41972F712099F7EC002384DB /* Project object */;
+}
