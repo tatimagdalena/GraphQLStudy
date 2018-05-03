@@ -14,6 +14,7 @@
 		41972F872099F7EF002384DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41972F852099F7EF002384DB /* LaunchScreen.storyboard */; };
 		41972F922099F7EF002384DB /* POCApolloGraphQLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41972F912099F7EF002384DB /* POCApolloGraphQLTests.swift */; };
 		41972F9D2099F7EF002384DB /* POCApolloGraphQLUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41972F9C2099F7EF002384DB /* POCApolloGraphQLUITests.swift */; };
+		41972FAF209B41DD002384DB /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41972FAE209B41DD002384DB /* Apollo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		41972F982099F7EF002384DB /* POCApolloGraphQLUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = POCApolloGraphQLUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		41972F9C2099F7EF002384DB /* POCApolloGraphQLUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCApolloGraphQLUITests.swift; sourceTree = "<group>"; };
 		41972F9E2099F7F0002384DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41972FAE209B41DD002384DB /* Apollo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Apollo.framework; path = Carthage/Build/iOS/Apollo.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41972FAF209B41DD002384DB /* Apollo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +132,7 @@
 		41972FAB209A123F002384DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				41972FAE209B41DD002384DB /* Apollo.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -140,6 +144,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41972FA12099F7F0002384DB /* Build configuration list for PBXNativeTarget "POCApolloGraphQL" */;
 			buildPhases = (
+				41972FB0209B4618002384DB /* Generate Apollo GraphQL API */,
 				41972F752099F7EC002384DB /* Sources */,
 				41972F762099F7EC002384DB /* Frameworks */,
 				41972F772099F7EC002384DB /* Resources */,
@@ -267,6 +272,7 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Apollo.framework",
 			);
 			name = "Carthage Run Script";
 			outputPaths = (
@@ -274,6 +280,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		41972FB0209B4618002384DB /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\necho $APOLLO_FRAMEWORK_PATH\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-codegen.sh generate $(find . -name '*.graphql') --schema schema.json --output API.swift";
 		};
 /* End PBXShellScriptBuildPhase section */
 
