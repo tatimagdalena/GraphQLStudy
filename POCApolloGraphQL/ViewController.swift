@@ -15,6 +15,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         GraphQLConsumer().fetchLocation()
+        
+        let someClass = SomeClass()
+        print(someClass.aProperty)
+        print(someClass.someOtherMethod())
+        someClass.someMethod()
+        
+        SomeStruct(aString: "pipipi", someValue: 32.32).printSomething()
     }
 
     override func didReceiveMemoryWarning() {

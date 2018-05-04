@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1689F81E209C7BD000BFE907 /* GraphQLConsumer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1689F81D209C7BD000BFE907 /* GraphQLConsumer.swift */; };
 		1689F820209C7E5800BFE907 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1689F81F209C7E5800BFE907 /* API.swift */; };
+		1689F822209C9EE500BFE907 /* SomeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1689F821209C9EE500BFE907 /* SomeClass.swift */; };
+		1689F824209CA0C100BFE907 /* SomeStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1689F823209CA0C100BFE907 /* SomeStruct.swift */; };
 		41972F7D2099F7EC002384DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41972F7C2099F7EC002384DB /* AppDelegate.swift */; };
 		41972F7F2099F7EC002384DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41972F7E2099F7EC002384DB /* ViewController.swift */; };
 		41972F822099F7EC002384DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41972F802099F7EC002384DB /* Main.storyboard */; };
@@ -39,6 +41,8 @@
 /* Begin PBXFileReference section */
 		1689F81D209C7BD000BFE907 /* GraphQLConsumer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLConsumer.swift; sourceTree = "<group>"; };
 		1689F81F209C7E5800BFE907 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		1689F821209C9EE500BFE907 /* SomeClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeClass.swift; sourceTree = "<group>"; };
+		1689F823209CA0C100BFE907 /* SomeStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeStruct.swift; sourceTree = "<group>"; };
 		41972F792099F7EC002384DB /* POCApolloGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POCApolloGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41972F7C2099F7EC002384DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41972F7E2099F7EC002384DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				1689F81F209C7E5800BFE907 /* API.swift */,
 				41972F7C2099F7EC002384DB /* AppDelegate.swift */,
 				1689F81D209C7BD000BFE907 /* GraphQLConsumer.swift */,
+				1689F821209C9EE500BFE907 /* SomeClass.swift */,
+				1689F823209CA0C100BFE907 /* SomeStruct.swift */,
 				41972F7E2099F7EC002384DB /* ViewController.swift */,
 				41972F802099F7EC002384DB /* Main.storyboard */,
 				41972F832099F7EF002384DB /* Assets.xcassets */,
@@ -308,8 +314,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1689F824209CA0C100BFE907 /* SomeStruct.swift in Sources */,
 				41972F7F2099F7EC002384DB /* ViewController.swift in Sources */,
 				1689F81E209C7BD000BFE907 /* GraphQLConsumer.swift in Sources */,
+				1689F822209C9EE500BFE907 /* SomeClass.swift in Sources */,
 				1689F820209C7E5800BFE907 /* API.swift in Sources */,
 				41972F7D2099F7EC002384DB /* AppDelegate.swift in Sources */,
 			);
