@@ -16,34 +16,36 @@ The build time is then displayed in the activity viewer.
 
 ### Summary
 
-###### First builds or building after clean
+###### First builds (after clean)
 
 Condition | Build times (Big project) | Build times (Small project)
 --------- | ----- | ------
-Without Apollo (First build) | x | ~6s
-With Apollo - empty query (First build) | x | ~9s
-With a query (First build) | x | ~12s
-With a query (After clean) | x | ~8s
-Decreasing query size (First build) | x | ~10s
-Decreasing query size (After clean) | x | ~8s
+Without Apollo | ~120s | ~6s
+With Apollo - empty query | ~133s | ~9s
+With a query | ~145s | ~12s
+Decreasing query size | ~128s | ~10s
 
 ###### Rebuilding without changes
 
 Condition | Rebuild times (Big project) | Rebuild times (Small project)
 --------- | ----- | ------
-Without Apollo | x | ~1s
-With Apollo - empty query | x | ~4s
-With a query | x | ~4s
-Decreasing query size | x | ~5s
+Without Apollo | ~5,5s | ~1s
+With Apollo - empty query | ~6s | ~4s
+With a query | ~8s | ~4s
+Decreasing query size | ~16s | ~5s
 
 ###### Changing branches (without clean)
 
 Condition | Rebuild times (Big project) | Rebuild times (Small project)
 --------- | ----- | ------
-Changing query | x | ~5s
-Changing classes | x | ~5s
+Changing query (smaller to bigger)| ~14s | ~5s
+Changing query (bigger to smaller)| ~12s | ~5s
+Changing classes (less to more)| ~19s | ~5s
+Changing classes (more to less)| **_~110s_** | ~5s
 
 ### Build time measurements (Raw data)
+
+#### Smaller project
 
 ###### Empty project
 
@@ -110,3 +112,35 @@ Changing classes | x | ~5s
 - From more classes to less classes: 4.457s | 4.546s | 4.699s
 
   Average time: 4,57s
+
+#### Bigger project
+
+###### After adding a Cartfile and Carthage script
+
+- First build after clean: 111,669 + 124,746 + 129,718
+- Rebuild without changes: 3,411 + 3,388 + 9,618
+
+###### After adding Apollo with empty query
+
+- First build: 133,102s
+- Rebuild: 5,8s
+
+###### After adding a query and calling it from code
+
+- First build: 145,879s
+- Rebuild: 8,273s
+
+###### Making the query smaller
+
+- First build: 128,342s
+- Rebuild: 16,285s
+
+###### Changing branches that changes only the query (and it's use)
+
+- Switch (smaller to bigger): 14,060s
+- Switch (bigger to smaller): 12,932s
+
+###### Changing branches that changes only classes not related to Apollo
+
+- Switch less to more classes: 15,960 + 21,234 + 20,756 = 19,32s
+- Switch more classes to less: 99,975 + 114,129 + 117,245 = 110,45s
