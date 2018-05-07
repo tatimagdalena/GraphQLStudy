@@ -144,3 +144,10 @@ Changing classes (more to less)| **_~110s_** | ~5s
 
 - Switch less to more classes: 15,960 + 21,234 + 20,756 = 19,32s
 - Switch more classes to less: 99,975 + 114,129 + 117,245 = 110,45s
+
+### Conclusion
+
+The adding of the Apollo framework didn't seem to be a problem until switching between branches with different classes in a bigger project.
+As seen in the building log and confirmed by the building times, when changing to a branch with more classes the incremental build seems to be broken, once all code are being compiled again.
+
+Changing from a ~20s compile time to a ~110s compile time is a big price to pay for adding a framework.
