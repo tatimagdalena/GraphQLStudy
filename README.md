@@ -149,7 +149,6 @@ Changing classes (more to less)| **_~110s_** | ~5s
 
 The adding of the Apollo framework didn't seem to be a problem until switching between branches with different classes in a bigger project.
 As seen in the building log and confirmed by the building times, when changing to a branch with more classes the incremental build seems to be broken, once all code are being compiled again.
-
-Changing from a ~20s compile time to a ~110s compile time is a big price to pay for adding a framework.
+⚠️ **_The same has happened when switching between branches that didn't have Apollo added, demonstrating that this problem was not related to it._**
 
 Another problem was an error when building the bigger project with Apollo run script. This error didn't fail the build and everything seemed to work fine, but it is not guaranteed that everything will be working when being sent to the AppStore, for example. After all, there is an error being shown. This seems to be a random error and it was already reported on the Apollo Github as an [issue](https://github.com/apollographql/apollo-ios/issues/34), but so far no solution has been presented.
